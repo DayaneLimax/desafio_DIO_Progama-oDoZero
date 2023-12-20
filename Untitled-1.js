@@ -1,23 +1,20 @@
 //Desafio Classificador de nível de Herói
 
 let nomeDoHeroi;
-let xp;
+let xp = 5000;
 let classeHeroi;
 
 
 console.log("=== Seja bem vindo ao Classificador de Nivel de Herói ===")
-nomeDoHeroi = prompt('Digite o nome do Herói: ')
-
+console.log('Digite o nome do Herói: ')
 console.log("Olá " + nomeDoHeroi, ", vou classificar o seu nivel")
 
-xp = prompt('Digite o seu xp: ')
 
-while (xp <= 0){
-   console.log('Você digitou um valor inválido')
-   xp = prompt('Digite o seu xp: ')
-}
+do{
+  // classeHeroi = prompt('Digite o seu xp: ')
+}while (xp < 1);
 
-console.log("Você digitou " + xp)
+console.log("Você digitou" + xp, "Você não tem Xp suficiente para classificação")
 
 if (xp < 1000){
     classeHeroi = "Ferro";
@@ -45,6 +42,6 @@ if (xp < 1000){
 
 }
 
-console.log("O Herói de nome " + nomeDoHeroi, " está no nivel de " + classeHeroi)   
+console.log("O Herói de nome " + nomeDoHeroi, + " está no nével de " + classeHeroi)   
 
 
